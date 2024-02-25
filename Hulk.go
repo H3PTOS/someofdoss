@@ -93,7 +93,7 @@ func main() {
 	t := os.Getenv("HULKMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
-		maxproc = 15000
+		maxproc = 99999
 	}
 
 	u, err := url.Parse(site)
